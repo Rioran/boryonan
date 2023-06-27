@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Борёнан Бритварвар</title>
+    <meta name="description" content="Riengine interactive text game demo.">
+    <meta name="author" content="Roman 'Rioran' Voronov">
+
+    <meta property="og:title" content="Riengine interactive text game demo.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rioran.github.io/riengine/main">
+    <meta property="og:description" content="BloodCoin minigame.">
+    <meta property="og:image" content="images/og_image.jpg">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class='container-fluid min-vh-50 d-flex flex-column'>
+        <div class='row-md p-1 text-center'>
+            <h1>Борёнан и Четыре Стихии</h1>
+            <div class='col m-3' id="image_div">
+                <img src="borya.png" class='rounded-circle' alt="Вот он какой!" width="300px">
+            </div>
+            <div class="container-fluid min-vh-50 d-flex flex-row text-center">
+                <button type="button" class="col btn btn-success m-1" onclick='get_random_conan();'>Ямете кудасай!</button>
+                <button type="button" class="col btn btn-success m-1" onclick='get_chapters();'>Главы</button>
+                <button type="button" class="col btn btn-secondary m-1" onclick='window.location.reload();'>В начало</button>
+            </div>
+            <div class="m-3 col" id="random_conan_output">...загрузка...</div>
+            <div class="container-fluid min-vh-50 d-flex flex-column" id="chapters_output">...загрузка...</div>
+            <div class="row" id="reading_output">
+                <div id="reading_text" class="">
+                    
+                </div>
+                <div id="reading_buttons" class="container-fluid min-vh-50 d-flex flex-row text-center">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="constants.js"></script>
+    <script src="code.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
