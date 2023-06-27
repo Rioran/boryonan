@@ -9,12 +9,12 @@ let reading_text = document.getElementById('reading_text');
 async function get_text(url) {
     const response = await fetch(url);
     raw_text = await response.text();
-    text_array = raw_text.split('\r\n');
+    text_array = raw_text.split('\n');
     raw_text = '';
     get_random_conan();
 }
 
-get_text('text.txt');
+get_text('https://rioran.github.io/boryonan/text.txt');
 
 function get_random_conan() {
     const choice_id_id = Math.floor(Math.random() * conan_ids.length);
